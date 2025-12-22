@@ -8,7 +8,7 @@ import Pricing from "./Pricing";
 const HomePage = () => {
   return (
     <div className="min-h-screen bg-slate-950 text-white overflow-hidden">
-        <Navbar />
+        <Navbar scrolled={false}/>
         <Hero />
         <Features2 />
         <Pricing />

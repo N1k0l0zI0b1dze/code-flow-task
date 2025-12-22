@@ -23,11 +23,12 @@ export default Navbar`,
 };
 
 const Hero = () => {
-  const [activeTab, setActiveTab] = useState("App.jsx");
+  const [activeTab, setActiveTab] =
+    useState<keyof typeof codeExamples>("App.jsx");
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
-    function handleMouseMove(e) {
+    function handleMouseMove(e: MouseEvent) {
       setMousePosition({ x: e.clientX, y: e.clientY });
     }
 
@@ -82,15 +83,13 @@ const Hero = () => {
                 <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 group-hover:transition-transform duration-300" />
               </button>
 
-
               <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-white/4 backdrop-blur-sm border-white/10 rounded-lg font-semibold text-sm sm:text-base transition-all duration-300 hover:bg-white/10 flex items-center justify-center space-x-2">
                 <div className="p-2 bg-white/10 rounded-full group-hover:bg-white/20 duration-300 transition-colors">
-                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white"/>
-                  </div>
+                  <Play className="w-4 h-4 sm:w-5 sm:h-5 fill-white" />
+                </div>
                 <span>Watch Demo</span>
               </button>
             </div>
-
           </div>
           <div className="relative order-2 w-full">
             <div className="relative bg-white/5 backdrop-blur-xl rounded-xl sm:rounded-2xl p-3 sm:p-4 shadow-2xl border border-white/10">

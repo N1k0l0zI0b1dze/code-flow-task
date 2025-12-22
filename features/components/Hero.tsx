@@ -23,8 +23,8 @@ export default Navbar`,
 };
 
 const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
   const [activeTab, setActiveTab] = useState("App.jsx");
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     function handleMouseMove(e) {

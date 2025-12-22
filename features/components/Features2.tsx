@@ -48,11 +48,11 @@ const Features2 = () => {
             <span className="bg-gradient-to-b from-white to-gray-300 bg-clip-text text-transparent">
               Yout Complete Development
             </span>
-          </h2>
           <br />
           <span className="bg-gradient-to-b from-blue-400 to-cyan-400 bg-clip-text text-transparent">
             Wrokflow
           </span>
+          </h2>  
         </div>
 
         <div className="space-y-16 sm:space-y-20 lg:space-y-32">

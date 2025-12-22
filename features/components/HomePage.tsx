@@ -1,4 +1,4 @@
-import Testimonials from "../testimonials/Testimonials";
+import Testimonials from "./Testimonials";
 import Features2 from "./Features2";
 import Footer from "./Footer";
 import Hero from "./Hero";
